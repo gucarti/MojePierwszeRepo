@@ -36,7 +36,7 @@ class Program
                         int count = CountAdjacentBombs(board, x, y);
                         displayBoard[y, x] = count.ToString()[0];
 
-                        if (count /*??*/ 0)
+                        if (count == 0)
                         {
                             // Odkryj sąsiadujące puste pola.
                             ExpandZeros(board, displayBoard, x, y);
